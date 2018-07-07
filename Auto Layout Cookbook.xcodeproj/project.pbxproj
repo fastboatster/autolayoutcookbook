@@ -86,6 +86,8 @@
 		B538D1C91BA0562600674D8D /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538D1C81BA0562600674D8D /* Recipe.swift */; };
 		B538D1CD1BA05C5500674D8D /* Recipe+Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538D1CC1BA05C5500674D8D /* Recipe+Storyboards.swift */; };
 		B538D1CF1BA069ED00674D8D /* Recipe+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538D1CE1BA069ED00674D8D /* Recipe+Loading.swift */; };
+		B8911ABD20F08FBB00DDF26F /* SimpleLabelAndTextFieldStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8911ABC20F08FBB00DDF26F /* SimpleLabelAndTextFieldStoryboard.storyboard */; };
+		B8911ABF20F097D300DDF26F /* DynamicHeightLabelAndTextFieldStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8911ABE20F097D200DDF26F /* DynamicHeightLabelAndTextFieldStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -182,6 +184,8 @@
 		B538D1C81BA0562600674D8D /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		B538D1CC1BA05C5500674D8D /* Recipe+Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Recipe+Storyboards.swift"; sourceTree = "<group>"; };
 		B538D1CE1BA069ED00674D8D /* Recipe+Loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Recipe+Loading.swift"; sourceTree = "<group>"; };
+		B8911ABC20F08FBB00DDF26F /* SimpleLabelAndTextFieldStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SimpleLabelAndTextFieldStoryboard.storyboard; sourceTree = "<group>"; };
+		B8911ABE20F097D200DDF26F /* DynamicHeightLabelAndTextFieldStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DynamicHeightLabelAndTextFieldStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +226,8 @@
 				3BA9BC2C20F03D59003ED3AA /* TwoEqualWidthViewsStoryboard.storyboard */,
 				3BA9BC2E20F04083003ED3AA /* TwoDifferentWidthViewsStoryboard.storyboard */,
 				3BA9BC3020F042C0003ED3AA /* TwoViewsWithComplexWidthsStoryboard.storyboard */,
+				B8911ABC20F08FBB00DDF26F /* SimpleLabelAndTextFieldStoryboard.storyboard */,
+				B8911ABE20F097D200DDF26F /* DynamicHeightLabelAndTextFieldStoryboard.storyboard */,
 			);
 			name = Tutorial;
 			sourceTree = "<group>";
@@ -470,6 +476,7 @@
 				9339FDE91B409DB60098CF0D /* AnimatingChanges.storyboard in Resources */,
 				932151B01B3D848B009654CF /* DynamicTextAndReadability.txt in Resources */,
 				93609A8D1B3B0CCE0050C029 /* DynamicHeightLabelAndTextField.storyboard in Resources */,
+				B8911ABD20F08FBB00DDF26F /* SimpleLabelAndTextFieldStoryboard.storyboard in Resources */,
 				9317C4D51B31CE51003DD739 /* LaunchScreen.storyboard in Resources */,
 				932151AC1B3D7D84009654CF /* DynamicTextAndReadability.storyboard in Resources */,
 				9339FDEF1B40AB470098CF0D /* UIKitDynamics.storyboard in Resources */,
@@ -495,6 +502,7 @@
 				93CF8D6A1B3321BE00BDBFC7 /* SimpleSingleView.storyboard in Resources */,
 				932151A81B3CABD5009654CF /* AspectRatioImageView.storyboard in Resources */,
 				93F720CE1B3C582300041731 /* GroupingViews.storyboard in Resources */,
+				B8911ABF20F097D300DDF26F /* DynamicHeightLabelAndTextFieldStoryboard.storyboard in Resources */,
 				9317C4D21B31CE51003DD739 /* Assets.xcassets in Resources */,
 				93F720C41B3C48B300041731 /* TwoEqualWidthButtons.txt in Resources */,
 				930104A41B3B644B0050658C /* DynamicHeightColumns.txt in Resources */,
