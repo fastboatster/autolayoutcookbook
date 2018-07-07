@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="17D47" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="uUY-gM-Cf7">
+            <objects>
+                <viewController id="bx2-XA-fca" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MJR-ye-JwY"/>
+                        <viewControllerLayoutGuide type="bottom" id="xFX-ap-aVt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H9y-pg-L4f">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ISb-KI-25B" userLabel="RedView">
+                                <rect key="frame" x="212" y="28" width="368" height="564"/>
+                                <color key="backgroundColor" red="0.79903155569999995" green="0.19865086670000001" blue="0.20018634199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZZR-7w-Mws" userLabel="BlueView">
+                                <rect key="frame" x="20" y="28" width="184" height="564"/>
+                                <color key="backgroundColor" red="0.22501337530000001" green="0.32358440760000001" blue="0.64373081919999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="cHk-l5-Niv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="ZZR-7w-Mws" secondAttribute="leading" id="1vp-3r-R9K"/>
+                            <constraint firstItem="ZZR-7w-Mws" firstAttribute="top" secondItem="MJR-ye-JwY" secondAttribute="bottom" constant="8" symbolic="YES" id="2Fl-cD-F2c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ISb-KI-25B" secondAttribute="trailing" id="2hu-qX-ZWV"/>
+                            <constraint firstItem="xFX-ap-aVt" firstAttribute="top" secondItem="ISb-KI-25B" secondAttribute="bottom" constant="8" symbolic="YES" id="L2s-DD-HFi"/>
+                            <constraint firstItem="xFX-ap-aVt" firstAttribute="top" secondItem="ZZR-7w-Mws" secondAttribute="bottom" constant="8" symbolic="YES" id="Nx5-XF-XeS"/>
+                            <constraint firstItem="ISb-KI-25B" firstAttribute="top" secondItem="MJR-ye-JwY" secondAttribute="bottom" constant="8" symbolic="YES" id="OBT-Ga-yHb"/>
+                            <constraint firstItem="ISb-KI-25B" firstAttribute="leading" secondItem="ZZR-7w-Mws" secondAttribute="trailing" constant="8" symbolic="YES" id="vlb-7C-vnn"/>
+                            <constraint firstItem="ISb-KI-25B" firstAttribute="width" secondItem="ZZR-7w-Mws" secondAttribute="width" multiplier="2" priority="750" id="xTo-7Q-wCQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D7F-9H-IDb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="467" y="306"/>
+        </scene>
+    </scenes>
+</document>

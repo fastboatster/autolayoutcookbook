@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="17D47" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="uPJ-ah-AzW">
+            <objects>
+                <viewController id="deB-pc-ktP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BVs-Bs-JdI"/>
+                        <viewControllerLayoutGuide type="bottom" id="slx-qz-8Ro"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J4L-B7-XNN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Prd-eB-HuL">
+                                <rect key="frame" x="20" y="28" width="560" height="564"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flowers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rm8-rv-BLl">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" image="flowers" translatesAutoresizingMaskIntoConstraints="NO" id="v0X-Zh-4ah">
+                                        <rect key="frame" x="0.0" y="29" width="560" height="497"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kP0-bE-Fc9">
+                                        <rect key="frame" x="0.0" y="534" width="560" height="30"/>
+                                        <state key="normal" title="Edit"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Prd-eB-HuL" firstAttribute="leading" secondItem="J4L-B7-XNN" secondAttribute="leadingMargin" id="SFV-No-qEF"/>
+                            <constraint firstItem="Prd-eB-HuL" firstAttribute="top" secondItem="BVs-Bs-JdI" secondAttribute="bottom" constant="8" symbolic="YES" id="jRR-oi-um3"/>
+                            <constraint firstItem="slx-qz-8Ro" firstAttribute="top" secondItem="Prd-eB-HuL" secondAttribute="bottom" constant="8" symbolic="YES" id="kA9-gP-oIz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Prd-eB-HuL" secondAttribute="trailing" id="kWU-Mt-TzJ"/>
+                            <constraint firstItem="slx-qz-8Ro" firstAttribute="top" secondItem="Prd-eB-HuL" secondAttribute="bottom" constant="8" id="nD0-my-Zhf"/>
+                            <constraint firstItem="Prd-eB-HuL" firstAttribute="trailing" secondItem="J4L-B7-XNN" secondAttribute="trailingMargin" id="pLd-Xb-f1b"/>
+                            <constraint firstItem="Prd-eB-HuL" firstAttribute="leading" secondItem="J4L-B7-XNN" secondAttribute="leadingMargin" id="qi6-MK-Xek"/>
+                            <constraint firstItem="Prd-eB-HuL" firstAttribute="top" secondItem="BVs-Bs-JdI" secondAttribute="bottom" constant="8" id="zr8-Uf-Zok"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N2i-dK-6HT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="399" y="355"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="flowers" width="300" height="400"/>
+    </resources>
+</document>

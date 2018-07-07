@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="17D47" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="nD6-ep-PuF">
+            <objects>
+                <viewController id="swl-pM-Kbd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bGm-ha-hda"/>
+                        <viewControllerLayoutGuide type="bottom" id="ikx-KR-Xw4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6yp-dy-rI1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BQE-ux-6TV" userLabel="BlueView">
+                                <rect key="frame" x="20" y="28" width="560" height="552"/>
+                                <color key="backgroundColor" red="0.2250133752822876" green="0.32358440756797791" blue="0.64373081922531128" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="BlueView">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BQE-ux-6TV" firstAttribute="trailing" secondItem="6yp-dy-rI1" secondAttribute="trailingMargin" id="If5-gv-irk"/>
+                            <constraint firstItem="ikx-KR-Xw4" firstAttribute="top" secondItem="BQE-ux-6TV" secondAttribute="bottom" priority="750" constant="8" symbolic="YES" id="QnH-1t-EwU"/>
+                            <constraint firstItem="BQE-ux-6TV" firstAttribute="top" secondItem="bGm-ha-hda" secondAttribute="bottom" priority="750" constant="8" symbolic="YES" id="oQ1-hn-cvR"/>
+                            <constraint firstItem="BQE-ux-6TV" firstAttribute="leading" secondItem="6yp-dy-rI1" secondAttribute="leadingMargin" id="qTA-QH-p0v"/>
+                            <constraint firstItem="BQE-ux-6TV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6yp-dy-rI1" secondAttribute="top" constant="20" id="qmZ-d4-mke"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="BQE-ux-6TV" secondAttribute="bottom" constant="20" id="sTx-MY-hBM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ecC-fE-elb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="368" y="360"/>
+        </scene>
+    </scenes>
+</document>

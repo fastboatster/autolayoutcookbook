@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="17D47" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="iNC-pZ-MxL">
+            <objects>
+                <viewController id="R2N-ic-1wR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qah-uE-jea"/>
+                        <viewControllerLayoutGuide type="bottom" id="J39-hk-F4I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HOV-vO-KuP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="61O-Uq-bu7" userLabel="YellowView">
+                                <rect key="frame" x="20" y="40" width="276" height="540"/>
+                                <color key="backgroundColor" red="0.99912720918655396" green="0.8008195161819458" blue="0.0021082314196974039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="peC-p8-JWZ" userLabel="GreenView">
+                                <rect key="frame" x="304" y="40" width="276" height="540"/>
+                                <color key="backgroundColor" red="0.10653618723154068" green="0.50746822357177734" blue="0.11275941878557205" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="J39-hk-F4I" firstAttribute="top" secondItem="61O-Uq-bu7" secondAttribute="bottom" constant="20" id="2a0-83-56s"/>
+                            <constraint firstItem="peC-p8-JWZ" firstAttribute="top" secondItem="qah-uE-jea" secondAttribute="bottom" constant="20" id="2ip-EL-dvy"/>
+                            <constraint firstItem="peC-p8-JWZ" firstAttribute="trailing" secondItem="HOV-vO-KuP" secondAttribute="trailingMargin" id="BVE-r3-394"/>
+                            <constraint firstItem="J39-hk-F4I" firstAttribute="top" secondItem="peC-p8-JWZ" secondAttribute="bottom" constant="20" id="F2H-hY-97H"/>
+                            <constraint firstItem="61O-Uq-bu7" firstAttribute="width" secondItem="peC-p8-JWZ" secondAttribute="width" id="FHQ-Pe-Piv"/>
+                            <constraint firstItem="61O-Uq-bu7" firstAttribute="leading" secondItem="HOV-vO-KuP" secondAttribute="leadingMargin" id="eh7-tF-sQ4"/>
+                            <constraint firstItem="61O-Uq-bu7" firstAttribute="top" secondItem="qah-uE-jea" secondAttribute="bottom" constant="20" id="f3S-10-hym"/>
+                            <constraint firstItem="peC-p8-JWZ" firstAttribute="leading" secondItem="61O-Uq-bu7" secondAttribute="trailing" constant="8" symbolic="YES" id="qum-2p-HfP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LtD-wd-cQY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="563" y="399"/>
+        </scene>
+    </scenes>
+</document>
