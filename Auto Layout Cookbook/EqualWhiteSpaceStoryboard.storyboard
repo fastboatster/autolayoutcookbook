@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17F77" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="2QL-YT-jCJ">
+            <objects>
+                <viewController id="6XU-UV-ust" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SyI-WR-VTr"/>
+                        <viewControllerLayoutGuide type="bottom" id="rwH-Bf-2cu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jeb-CD-hcT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Qj-c5-z1S" userLabel="Long Button">
+                                <rect key="frame" x="195.5" y="617" width="155" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Much, Much Longer Button Title"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gV-9D-KJ4" userLabel="Trailing Dummy View">
+                                <rect key="frame" x="358.5" y="647" width="0.5" height="0.0"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="Zxv-f3-8mk"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YCK-Z3-O6d" userLabel="Center Dummy View">
+                                <rect key="frame" x="187.5" y="647" width="0.0" height="0.0"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="DUy-S6-JWX"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xc6-lh-kdN" userLabel="Leading Dummy View">
+                                <rect key="frame" x="16" y="647" width="0.5" height="0.0"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="gkl-aF-nkS"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4S-ba-f5M" userLabel="Short Button">
+                                <rect key="frame" x="24.5" y="617" width="155" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Short"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="Xc6-lh-kdN" secondAttribute="leading" id="38k-vu-1Pk"/>
+                            <constraint firstItem="6Qj-c5-z1S" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="N4S-ba-f5M" secondAttribute="trailing" constant="8" symbolic="YES" id="7XZ-6K-4yQ"/>
+                            <constraint firstItem="rwH-Bf-2cu" firstAttribute="top" secondItem="N4S-ba-f5M" secondAttribute="bottom" constant="20" id="7pS-XC-N1y"/>
+                            <constraint firstItem="rwH-Bf-2cu" firstAttribute="top" secondItem="5gV-9D-KJ4" secondAttribute="bottom" constant="20" id="B7C-ha-PuB"/>
+                            <constraint firstItem="6Qj-c5-z1S" firstAttribute="leading" secondItem="YCK-Z3-O6d" secondAttribute="trailing" constant="8" symbolic="YES" id="Bz7-7f-xbZ"/>
+                            <constraint firstItem="rwH-Bf-2cu" firstAttribute="top" secondItem="YCK-Z3-O6d" secondAttribute="bottom" constant="20" id="IW2-HR-u6C"/>
+                            <constraint firstItem="5gV-9D-KJ4" firstAttribute="leading" secondItem="6Qj-c5-z1S" secondAttribute="trailing" constant="8" symbolic="YES" id="JU6-6Y-o2S"/>
+                            <constraint firstItem="rwH-Bf-2cu" firstAttribute="top" secondItem="6Qj-c5-z1S" secondAttribute="bottom" constant="20" id="KMD-cu-ntB"/>
+                            <constraint firstItem="Xc6-lh-kdN" firstAttribute="width" secondItem="YCK-Z3-O6d" secondAttribute="width" id="M5X-gF-wdZ"/>
+                            <constraint firstItem="N4S-ba-f5M" firstAttribute="width" secondItem="6Qj-c5-z1S" secondAttribute="width" id="MeA-Qg-kf0"/>
+                            <constraint firstItem="N4S-ba-f5M" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jeb-CD-hcT" secondAttribute="leadingMargin" id="NSL-re-9MS"/>
+                            <constraint firstItem="N4S-ba-f5M" firstAttribute="leading" secondItem="Xc6-lh-kdN" secondAttribute="trailing" constant="8" symbolic="YES" id="Upk-3h-KSy"/>
+                            <constraint firstItem="YCK-Z3-O6d" firstAttribute="leading" secondItem="N4S-ba-f5M" secondAttribute="trailing" constant="8" symbolic="YES" id="aNy-Ql-TOo"/>
+                            <constraint firstItem="rwH-Bf-2cu" firstAttribute="top" secondItem="Xc6-lh-kdN" secondAttribute="bottom" constant="20" id="ft3-5e-Zs8"/>
+                            <constraint firstItem="YCK-Z3-O6d" firstAttribute="width" secondItem="5gV-9D-KJ4" secondAttribute="width" id="sax-fS-FI6"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="6Qj-c5-z1S" secondAttribute="trailing" id="vrG-Ha-JtN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5gV-9D-KJ4" secondAttribute="trailing" id="z18-vB-bS2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EuP-xz-n7q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-242.40000000000001" y="151.57421289355324"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17F77" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="xN7-kY-y9w">
+            <objects>
+                <viewController id="1sC-dL-Wbc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PkD-k9-wCu"/>
+                        <viewControllerLayoutGuide type="bottom" id="JEb-08-j7g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dz2-qW-Zh3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GiL-Y8-V8w" userLabel="Short button">
+                                <rect key="frame" x="20" y="686" width="183" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Short"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sso-94-dei" userLabel="Much longer button">
+                                <rect key="frame" x="211" y="686" width="183" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Much Longer Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="GiL-Y8-V8w" secondAttribute="leading" id="9JO-im-cPT"/>
+                            <constraint firstItem="GiL-Y8-V8w" firstAttribute="width" secondItem="sso-94-dei" secondAttribute="width" id="Quf-fV-QZn"/>
+                            <constraint firstItem="JEb-08-j7g" firstAttribute="top" secondItem="GiL-Y8-V8w" secondAttribute="bottom" constant="20" id="csF-lg-mVT"/>
+                            <constraint firstItem="JEb-08-j7g" firstAttribute="top" secondItem="sso-94-dei" secondAttribute="bottom" constant="20" id="d43-4o-1As"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sso-94-dei" secondAttribute="trailing" id="ldE-Mx-IAp"/>
+                            <constraint firstItem="sso-94-dei" firstAttribute="leading" secondItem="GiL-Y8-V8w" secondAttribute="trailing" constant="8" symbolic="YES" id="yjx-Ku-e1O"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="55L-0L-igW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="194" y="154"/>
+        </scene>
+    </scenes>
+</document>

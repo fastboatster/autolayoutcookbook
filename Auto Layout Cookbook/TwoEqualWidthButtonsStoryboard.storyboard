@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17F77" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="l1R-99-P5A">
+            <objects>
+                <viewController id="gFQ-tu-qUI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KOZ-Z3-NpF"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tpn-2h-Ie3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jsM-0I-hf9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmv-nd-uPK" userLabel="Short Button">
+                                <rect key="frame" x="16" y="617" width="167.5" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" label="Short Button"/>
+                                <state key="normal" title="short"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvZ-i2-G2G" userLabel="Long Button">
+                                <rect key="frame" x="191.5" y="617" width="167.5" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Much Longer Button Title"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tpn-2h-Ie3" firstAttribute="top" secondItem="kmv-nd-uPK" secondAttribute="bottom" constant="20" id="1YZ-3Q-0Sg"/>
+                            <constraint firstItem="kmv-nd-uPK" firstAttribute="width" secondItem="hvZ-i2-G2G" secondAttribute="width" id="OSx-jd-P58"/>
+                            <constraint firstItem="hvZ-i2-G2G" firstAttribute="leading" secondItem="kmv-nd-uPK" secondAttribute="trailing" constant="8" symbolic="YES" id="QqX-3a-Tbx"/>
+                            <constraint firstItem="Tpn-2h-Ie3" firstAttribute="top" secondItem="hvZ-i2-G2G" secondAttribute="bottom" constant="20" id="XDr-on-oUI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hvZ-i2-G2G" secondAttribute="trailing" id="mK3-ME-xLY"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="kmv-nd-uPK" secondAttribute="leading" id="oJF-Zv-v69"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oPj-hX-i6o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-300" y="157"/>
+        </scene>
+    </scenes>
+</document>

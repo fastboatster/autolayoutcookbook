@@ -54,10 +54,10 @@
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
                                 <include reference="LUM-Pr-Vi1"/>
-                                <exclude reference="Bv9-Ju-Vu1"/>
                                 <exclude reference="Czr-no-S5K"/>
                                 <include reference="YBd-9u-Ba1"/>
                                 <include reference="c7x-kR-WlI"/>
+                                <exclude reference="Bv9-Ju-Vu1"/>
                             </mask>
                         </variation>
                     </view>

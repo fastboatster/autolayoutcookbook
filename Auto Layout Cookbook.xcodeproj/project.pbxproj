@@ -90,6 +90,10 @@
 		B8911ABF20F097D300DDF26F /* DynamicHeightLabelAndTextFieldStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8911ABE20F097D200DDF26F /* DynamicHeightLabelAndTextFieldStoryboard.storyboard */; };
 		B8F6FB6320F181F100AB220F /* FixedHeightColumnsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8F6FB6220F181F100AB220F /* FixedHeightColumnsStoryboard.storyboard */; };
 		B8F6FB6520F18A3B00AB220F /* DynamicHeightColumnsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8F6FB6420F18A3B00AB220F /* DynamicHeightColumnsStoryboard.storyboard */; };
+		B8F6FB6720F1956C00AB220F /* TwoEqualWidthButtonsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8F6FB6620F1956C00AB220F /* TwoEqualWidthButtonsStoryboard.storyboard */; };
+		B8F6FB6920F1981500AB220F /* ThreeEqualWidthButtonsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8F6FB6820F1981500AB220F /* ThreeEqualWidthButtonsStoryboard.storyboard */; };
+		B8F6FB6B20F19DB900AB220F /* EqualWhiteSpaceStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8F6FB6A20F19DB900AB220F /* EqualWhiteSpaceStoryboard.storyboard */; };
+		B8F6FB6D20F1AB1700AB220F /* ButtonsSizeClassStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8F6FB6C20F1AB1700AB220F /* ButtonsSizeClassStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -190,6 +194,10 @@
 		B8911ABE20F097D200DDF26F /* DynamicHeightLabelAndTextFieldStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DynamicHeightLabelAndTextFieldStoryboard.storyboard; sourceTree = "<group>"; };
 		B8F6FB6220F181F100AB220F /* FixedHeightColumnsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FixedHeightColumnsStoryboard.storyboard; sourceTree = "<group>"; };
 		B8F6FB6420F18A3B00AB220F /* DynamicHeightColumnsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DynamicHeightColumnsStoryboard.storyboard; sourceTree = "<group>"; };
+		B8F6FB6620F1956C00AB220F /* TwoEqualWidthButtonsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TwoEqualWidthButtonsStoryboard.storyboard; sourceTree = "<group>"; };
+		B8F6FB6820F1981500AB220F /* ThreeEqualWidthButtonsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ThreeEqualWidthButtonsStoryboard.storyboard; sourceTree = "<group>"; };
+		B8F6FB6A20F19DB900AB220F /* EqualWhiteSpaceStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EqualWhiteSpaceStoryboard.storyboard; sourceTree = "<group>"; };
+		B8F6FB6C20F1AB1700AB220F /* ButtonsSizeClassStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ButtonsSizeClassStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +242,10 @@
 				B8911ABE20F097D200DDF26F /* DynamicHeightLabelAndTextFieldStoryboard.storyboard */,
 				B8F6FB6220F181F100AB220F /* FixedHeightColumnsStoryboard.storyboard */,
 				B8F6FB6420F18A3B00AB220F /* DynamicHeightColumnsStoryboard.storyboard */,
+				B8F6FB6620F1956C00AB220F /* TwoEqualWidthButtonsStoryboard.storyboard */,
+				B8F6FB6820F1981500AB220F /* ThreeEqualWidthButtonsStoryboard.storyboard */,
+				B8F6FB6A20F19DB900AB220F /* EqualWhiteSpaceStoryboard.storyboard */,
+				B8F6FB6C20F1AB1700AB220F /* ButtonsSizeClassStoryboard.storyboard */,
 			);
 			name = Tutorial;
 			sourceTree = "<group>";
@@ -476,6 +488,7 @@
 				936B0DE41B3C92F60056A829 /* AspectFitImageView.storyboard in Resources */,
 				936BFD0D1B3854CE00B5E955 /* NestedStackViews.storyboard in Resources */,
 				3BA9BC2B20F02D3A003ED3AA /* AdaptiveSingleViewStoryboard.storyboard in Resources */,
+				B8F6FB6D20F1AB1700AB220F /* ButtonsSizeClassStoryboard.storyboard in Resources */,
 				3BA9BC3120F042C0003ED3AA /* TwoViewsWithComplexWidthsStoryboard.storyboard in Resources */,
 				93F720C61B3C4BC700041731 /* ThreeEqualWidthButtons.storyboard in Resources */,
 				93609A8B1B3B099C0050C029 /* SimpleLabelAndTextField.txt in Resources */,
@@ -511,6 +524,7 @@
 				93CF8D6A1B3321BE00BDBFC7 /* SimpleSingleView.storyboard in Resources */,
 				932151A81B3CABD5009654CF /* AspectRatioImageView.storyboard in Resources */,
 				93F720CE1B3C582300041731 /* GroupingViews.storyboard in Resources */,
+				B8F6FB6720F1956C00AB220F /* TwoEqualWidthButtonsStoryboard.storyboard in Resources */,
 				B8911ABF20F097D300DDF26F /* DynamicHeightLabelAndTextFieldStoryboard.storyboard in Resources */,
 				9317C4D21B31CE51003DD739 /* Assets.xcassets in Resources */,
 				93F720C41B3C48B300041731 /* TwoEqualWidthButtons.txt in Resources */,
@@ -519,6 +533,7 @@
 				932151B81B3D9291009654CF /* SelfSizingTableViewCells.txt in Resources */,
 				93BFCC1E1B5D7C73006FF54A /* ButtonsSizeClass.txt in Resources */,
 				931822781B3714C800A2F0EE /* SimpleStackView.txt in Resources */,
+				B8F6FB6B20F19DB900AB220F /* EqualWhiteSpaceStoryboard.storyboard in Resources */,
 				937EBA391B39B887001A83F8 /* DynamicStackView.storyboard in Resources */,
 				93609A871B3B06730050C029 /* TwoViewsWithComplexWidths.txt in Resources */,
 				93609A831B3B03A80050C029 /* TwoDifferentWidthViews.txt in Resources */,
@@ -530,6 +545,7 @@
 				936BFD0F1B385D9800B5E955 /* NestedStackViews.txt in Resources */,
 				93F720C81B3C4D7700041731 /* ThreeEqualWidthButtons.txt in Resources */,
 				9317C4D01B31CE51003DD739 /* Main.storyboard in Resources */,
+				B8F6FB6920F1981500AB220F /* ThreeEqualWidthButtonsStoryboard.storyboard in Resources */,
 				935936411B367B6B003F8151 /* AdaptiveSingleView.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
