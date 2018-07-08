@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="17D47" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17F77" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,22 +19,22 @@
                         <viewControllerLayoutGuide type="bottom" id="xFX-ap-aVt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="H9y-pg-L4f">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ISb-KI-25B" userLabel="RedView">
-                                <rect key="frame" x="212" y="28" width="368" height="564"/>
-                                <color key="backgroundColor" red="0.79903155569999995" green="0.19865086670000001" blue="0.20018634199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="174" y="28" width="185" height="631"/>
+                                <color key="backgroundColor" red="0.74442344903945923" green="0.11775508522987366" blue="0.15311063826084137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZZR-7w-Mws" userLabel="BlueView">
-                                <rect key="frame" x="20" y="28" width="184" height="564"/>
-                                <color key="backgroundColor" red="0.22501337530000001" green="0.32358440760000001" blue="0.64373081919999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="16" y="28" width="150" height="631"/>
+                                <color key="backgroundColor" red="0.1716906726360321" green="0.23984089493751526" blue="0.57644075155258179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="cHk-l5-Niv"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="ZZR-7w-Mws" secondAttribute="leading" id="1vp-3r-R9K"/>
                             <constraint firstItem="ZZR-7w-Mws" firstAttribute="top" secondItem="MJR-ye-JwY" secondAttribute="bottom" constant="8" symbolic="YES" id="2Fl-cD-F2c"/>

@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="17D47" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hCC-91-arT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17F77" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hCC-91-arT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,19 +19,19 @@
                         <viewControllerLayoutGuide type="bottom" id="d4a-49-yb5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oSr-pD-hYf">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dYK-jC-A2h" userLabel="Orange View">
-                                <rect key="frame" x="212" y="40" width="368" height="540"/>
-                                <color key="backgroundColor" red="0.99930053949999997" green="0.60050517319999996" blue="0.00092821806900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="135.5" y="40" width="223.5" height="607"/>
+                                <color key="backgroundColor" red="0.98996758460998535" green="0.52770209312438965" blue="0.033808819949626923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzz-kX-nZ4" userLabel="Purple View">
-                                <rect key="frame" x="20" y="40" width="184" height="540"/>
-                                <color key="backgroundColor" red="0.57253700490000003" green="0.15256640320000001" blue="0.56100219490000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="16" y="40" width="111.5" height="607"/>
+                                <color key="backgroundColor" red="0.49317657947540283" green="0.059018425643444061" blue="0.48764759302139282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="gzz-kX-nZ4" firstAttribute="leading" secondItem="oSr-pD-hYf" secondAttribute="leadingMargin" id="2o6-Kp-Lh0"/>
                             <constraint firstItem="d4a-49-yb5" firstAttribute="top" secondItem="gzz-kX-nZ4" secondAttribute="bottom" constant="20" id="J9N-gC-1RJ"/>

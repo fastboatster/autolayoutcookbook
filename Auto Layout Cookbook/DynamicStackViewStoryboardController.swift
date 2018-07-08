@@ -30,31 +30,31 @@ class DynamicStackViewStoryboardController: UIViewController {
     
     // MARK: Action Methods
     
-    @IBAction func addEntry(sender: AnyObject) {
+    @IBAction func addEntry(_ sender: AnyObject) {
         
         let stack = stackView
-        let index = stack.arrangedSubviews.count - 1
-        let addView = stack.arrangedSubviews[index]
+        let index = (stack?.arrangedSubviews.count)! - 1
+        let addView = stack?.arrangedSubviews[index]
         
         let scroll = scrollView
-        let offset = CGPoint(x: scroll.contentOffset.x,
-                             y: scroll.contentOffset.y + addView.frame.size.height)
+        let offset = CGPoint(x: (scroll?.contentOffset.x)!,
+                             y: (scroll?.contentOffset.y)! + (addView?.frame.size.height)!)
         
         let newView = createEntry()
-        newView.hidden = true
-        stack.insertArrangedSubview(newView, atIndex: index)
+        newView.isHidden = true
+        stack?.insertArrangedSubview(newView, at: index)
         
-        UIView.animateWithDuration(0.25) { () -> Void in
-            newView.hidden = false
-            scroll.contentOffset = offset
-        }
+        UIView.animate(withDuration: 0.25, animations: { () -> Void in
+            newView.isHidden = false
+            scroll?.contentOffset = offset
+        }) 
     }
     
     
-    func deleteStackView(sender: UIButton) {
+    func deleteStackView(_ sender: UIButton) {
         if let view = sender.superview {
-            UIView.animateWithDuration(0.25, animations: { () -> Void in
-                view.hidden = true
+            UIView.animate(withDuration: 0.25, animations: { () -> Void in
+                view.isHidden = true
                 }, completion: { (success) -> Void in
                     view.removeFromSuperview()
             })
@@ -64,27 +64,27 @@ class DynamicStackViewStoryboardController: UIViewController {
     
     
     // MARK: - Private Methods
-    private func createEntry() -> UIView {
-        let date = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .ShortStyle, timeStyle: .NoStyle)
+    fileprivate func createEntry() -> UIView {
+        let date = DateFormatter.localizedString(from: Date(), dateStyle: .short, timeStyle: .none)
         let number = "\(randomHexQuad())-\(randomHexQuad())-\(randomHexQuad())-\(randomHexQuad())"
         
         let stack = UIStackView()
-        stack.axis = .Horizontal
-        stack.alignment = .FirstBaseline
-        stack.distribution = .Fill
+        stack.axis = .horizontal
+        stack.alignment = .firstBaseline
+        stack.distribution = .fill
         stack.spacing = 8
         
         let dateLabel = UILabel()
         dateLabel.text = date
-        dateLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
+        dateLabel.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
         
         let numberLabel = UILabel()
         numberLabel.text = number
-        numberLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)
+        numberLabel.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.headline)
         
-        let deleteButton = UIButton(type: .RoundedRect)
-        deleteButton.setTitle("Delete", forState: .Normal)
-        deleteButton.addTarget(self, action: "deleteStackView:", forControlEvents: .TouchUpInside)
+        let deleteButton = UIButton(type: .roundedRect)
+        deleteButton.setTitle("Delete", for: UIControlState())
+        deleteButton.addTarget(self, action: #selector(DynamicStackViewStoryboardController.deleteStackView(_:)), for: .touchUpInside)
         
         stack.addArrangedSubview(dateLabel)
         stack.addArrangedSubview(numberLabel)
@@ -93,7 +93,7 @@ class DynamicStackViewStoryboardController: UIViewController {
         return stack
     }
     
-    private func randomHexQuad() -> String {
+    fileprivate func randomHexQuad() -> String {
         return NSString(format: "%X%X%X%X",
                         arc4random() % 16,
                         arc4random() % 16,

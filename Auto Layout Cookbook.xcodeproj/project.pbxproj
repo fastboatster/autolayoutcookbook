@@ -88,6 +88,8 @@
 		B538D1CF1BA069ED00674D8D /* Recipe+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538D1CE1BA069ED00674D8D /* Recipe+Loading.swift */; };
 		B8911ABD20F08FBB00DDF26F /* SimpleLabelAndTextFieldStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8911ABC20F08FBB00DDF26F /* SimpleLabelAndTextFieldStoryboard.storyboard */; };
 		B8911ABF20F097D300DDF26F /* DynamicHeightLabelAndTextFieldStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8911ABE20F097D200DDF26F /* DynamicHeightLabelAndTextFieldStoryboard.storyboard */; };
+		B8F6FB6320F181F100AB220F /* FixedHeightColumnsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8F6FB6220F181F100AB220F /* FixedHeightColumnsStoryboard.storyboard */; };
+		B8F6FB6520F18A3B00AB220F /* DynamicHeightColumnsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8F6FB6420F18A3B00AB220F /* DynamicHeightColumnsStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -186,6 +188,8 @@
 		B538D1CE1BA069ED00674D8D /* Recipe+Loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Recipe+Loading.swift"; sourceTree = "<group>"; };
 		B8911ABC20F08FBB00DDF26F /* SimpleLabelAndTextFieldStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SimpleLabelAndTextFieldStoryboard.storyboard; sourceTree = "<group>"; };
 		B8911ABE20F097D200DDF26F /* DynamicHeightLabelAndTextFieldStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DynamicHeightLabelAndTextFieldStoryboard.storyboard; sourceTree = "<group>"; };
+		B8F6FB6220F181F100AB220F /* FixedHeightColumnsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FixedHeightColumnsStoryboard.storyboard; sourceTree = "<group>"; };
+		B8F6FB6420F18A3B00AB220F /* DynamicHeightColumnsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DynamicHeightColumnsStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +232,8 @@
 				3BA9BC3020F042C0003ED3AA /* TwoViewsWithComplexWidthsStoryboard.storyboard */,
 				B8911ABC20F08FBB00DDF26F /* SimpleLabelAndTextFieldStoryboard.storyboard */,
 				B8911ABE20F097D200DDF26F /* DynamicHeightLabelAndTextFieldStoryboard.storyboard */,
+				B8F6FB6220F181F100AB220F /* FixedHeightColumnsStoryboard.storyboard */,
+				B8F6FB6420F18A3B00AB220F /* DynamicHeightColumnsStoryboard.storyboard */,
 			);
 			name = Tutorial;
 			sourceTree = "<group>";
@@ -419,10 +425,12 @@
 				TargetAttributes = {
 					0A6AB0BA1BA10DD200E8D9ED = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0830;
 						TestTargetID = 9317C4C61B31CE51003DD739;
 					};
 					9317C4C61B31CE51003DD739 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -492,6 +500,7 @@
 				93BFCC1C1B5D7AFD006FF54A /* ButtonsSizeClass.storyboard in Resources */,
 				93609A7F1B3AFFFC0050C029 /* TwoEqualWidthViews.txt in Resources */,
 				3BA9BC2D20F03D59003ED3AA /* TwoEqualWidthViewsStoryboard.storyboard in Resources */,
+				B8F6FB6320F181F100AB220F /* FixedHeightColumnsStoryboard.storyboard in Resources */,
 				93609A811B3B02590050C029 /* TwoDifferentWidthViews.storyboard in Resources */,
 				93F720D01B3C5A6D00041731 /* GroupingViews.txt in Resources */,
 				93F720CC1B3C518100041731 /* EqualWhiteSpace.txt in Resources */,
@@ -514,6 +523,7 @@
 				93609A871B3B06730050C029 /* TwoViewsWithComplexWidths.txt in Resources */,
 				93609A831B3B03A80050C029 /* TwoDifferentWidthViews.txt in Resources */,
 				93CF8D6F1B336CF200BDBFC7 /* Cookbook.plist in Resources */,
+				B8F6FB6520F18A3B00AB220F /* DynamicHeightColumnsStoryboard.storyboard in Resources */,
 				3BA9BC1F20EFE8C6003ED3AA /* SimpleStackViewStoryboard.storyboard in Resources */,
 				93CF8D731B336FE700BDBFC7 /* AdaptiveSingleView.storyboard in Resources */,
 				93CF8D7D1B33A40200BDBFC7 /* SimpleSingleView.txt in Resources */,
@@ -603,6 +613,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.sample-code.Auto-Layout-CookbookUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Auto Layout Cookbook";
 				USES_XCTRUNNER = YES;
 			};
@@ -615,6 +626,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.sample-code.Auto-Layout-CookbookUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Auto Layout Cookbook";
 				USES_XCTRUNNER = YES;
 			};
@@ -711,6 +723,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Auto-Layout-Cookbook";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -722,6 +735,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Auto-Layout-Cookbook";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

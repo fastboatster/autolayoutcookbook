@@ -34,21 +34,21 @@ class DynamicStackViewController: UIViewController {
         let offset = CGPoint(x: scrollView.contentOffset.x, y: scrollView.contentOffset.y + addButtonContainerView.bounds.size.height)
 
         let newEntryView = createEntryView()
-        newEntryView.hidden = true
+        newEntryView.isHidden = true
         
-        stackView.insertArrangedSubview(newEntryView, atIndex: nextEntryIndex)
+        stackView.insertArrangedSubview(newEntryView, at: nextEntryIndex)
 
-        UIView.animateWithDuration(0.25) {
-            newEntryView.hidden = false
+        UIView.animate(withDuration: 0.25, animations: {
+            newEntryView.isHidden = false
             self.scrollView.contentOffset = offset
-        }
+        }) 
     }
     
-    func deleteStackView(sender: UIButton) {
+    func deleteStackView(_ sender: UIButton) {
         guard let entryView = sender.superview else { return }
         
-        UIView.animateWithDuration(0.25, animations: {
-            entryView.hidden = true
+        UIView.animate(withDuration: 0.25, animations: {
+            entryView.isHidden = true
         }, completion: { _ in
             entryView.removeFromSuperview()
         })
@@ -57,29 +57,29 @@ class DynamicStackViewController: UIViewController {
     // MARK: Convenience
     
     /// Creates a horizontal stack view entry to place within the parent `stackView`.
-    private func createEntryView() -> UIView {
-        let date = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .ShortStyle, timeStyle: .NoStyle)
-        let number = NSUUID().UUIDString
+    fileprivate func createEntryView() -> UIView {
+        let date = DateFormatter.localizedString(from: Date(), dateStyle: .short, timeStyle: .none)
+        let number = UUID().uuidString
         
         let stack = UIStackView()
-        stack.axis = .Horizontal
-        stack.alignment = .Center
-        stack.distribution = .Fill
+        stack.axis = .horizontal
+        stack.alignment = .center
+        stack.distribution = .fill
         stack.spacing = 8
         
         let dateLabel = UILabel()
         dateLabel.text = date
-        dateLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
+        dateLabel.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
         
         let numberLabel = UILabel()
         numberLabel.text = number
-        numberLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)
-        numberLabel.setContentHuggingPriority(UILayoutPriorityDefaultLow - 1.0, forAxis: .Horizontal)
-        numberLabel.setContentCompressionResistancePriority(UILayoutPriorityDefaultHigh - 1.0, forAxis: .Horizontal)
+        numberLabel.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.headline)
+        numberLabel.setContentHuggingPriority(UILayoutPriorityDefaultLow - 1.0, for: .horizontal)
+        numberLabel.setContentCompressionResistancePriority(UILayoutPriorityDefaultHigh - 1.0, for: .horizontal)
         
-        let deleteButton = UIButton(type: .RoundedRect)
-        deleteButton.setTitle("Delete", forState: .Normal)
-        deleteButton.addTarget(self, action: "deleteStackView:", forControlEvents: .TouchUpInside)
+        let deleteButton = UIButton(type: .roundedRect)
+        deleteButton.setTitle("Delete", for: UIControlState())
+        deleteButton.addTarget(self, action: #selector(DynamicStackViewController.deleteStackView(_:)), for: .touchUpInside)
         
         stack.addArrangedSubview(dateLabel)
         stack.addArrangedSubview(numberLabel)
