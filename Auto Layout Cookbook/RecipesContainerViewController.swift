@@ -110,7 +110,7 @@ class RecipesContainerViewController: UIViewController {
 
     // MARK: Gesture recognizer handlers
     
-    func handleDismissPresentedViewControllerGestureRecognizer(_ gestureRecognizer: UITapGestureRecognizer) {
+    @objc func handleDismissPresentedViewControllerGestureRecognizer(_ gestureRecognizer: UITapGestureRecognizer) {
         if gestureRecognizer.state == .recognized {
             presentedViewController?.dismiss(animated: true, completion: nil)
         }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17F77" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="y1E-9e-4ef">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,14 +18,14 @@
                         <viewControllerLayoutGuide type="bottom" id="gaq-gE-iCH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dDj-nC-6s5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="swm-ZV-6dP" userLabel="Red View">
-                                <rect key="frame" x="16" y="40" width="343" height="299.5"/>
+                                <rect key="frame" x="20" y="40" width="309.5" height="315"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koF-1p-Xt1">
-                                        <rect key="frame" x="136.5" y="128" width="70.5" height="43"/>
+                                        <rect key="frame" x="120" y="137" width="70.5" height="43"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="36"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -38,10 +38,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wQ4-a7-U7J" userLabel="Green View">
-                                <rect key="frame" x="16" y="347.5" width="343" height="299.5"/>
+                                <rect key="frame" x="337.5" y="40" width="309.5" height="315"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5no-Vb-vFG">
-                                        <rect key="frame" x="116.5" y="128" width="110.5" height="43"/>
+                                        <rect key="frame" x="100" y="137" width="110.5" height="43"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="36"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>

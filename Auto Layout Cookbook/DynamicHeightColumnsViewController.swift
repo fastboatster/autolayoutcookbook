@@ -34,7 +34,7 @@ class DynamicHeightColumnsViewController: UIViewController {
     
     // MARK: Timer
     
-    func changeFontSizeTimerDidFire(_ timer: Timer) {
+    @objc func changeFontSizeTimerDidFire(_ timer: Timer) {
         // Toggle the font preference.
         usingLargeFont = !usingLargeFont
         

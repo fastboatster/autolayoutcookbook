@@ -47,7 +47,7 @@ class AnimatingChangesViewController: UIViewController {
     
     // MARK: Convenience
     
-    func updateViews(_ timer: Timer) {
+    @objc func updateViews(_ timer: Timer) {
         let margins = view.layoutMarginsGuide
         
         let leaving = bottomView

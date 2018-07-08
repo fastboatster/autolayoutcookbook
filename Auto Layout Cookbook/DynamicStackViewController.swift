@@ -44,7 +44,7 @@ class DynamicStackViewController: UIViewController {
         }) 
     }
     
-    func deleteStackView(_ sender: UIButton) {
+    @objc func deleteStackView(_ sender: UIButton) {
         guard let entryView = sender.superview else { return }
         
         UIView.animate(withDuration: 0.25, animations: {
@@ -74,8 +74,8 @@ class DynamicStackViewController: UIViewController {
         let numberLabel = UILabel()
         numberLabel.text = number
         numberLabel.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.headline)
-        numberLabel.setContentHuggingPriority(UILayoutPriorityDefaultLow - 1.0, for: .horizontal)
-        numberLabel.setContentCompressionResistancePriority(UILayoutPriorityDefaultHigh - 1.0, for: .horizontal)
+        numberLabel.setContentHuggingPriority(UILayoutPriority.defaultLow - 1.0, for: .horizontal)
+        numberLabel.setContentCompressionResistancePriority(UILayoutPriority.defaultHigh - 1.0, for: .horizontal)
         
         let deleteButton = UIButton(type: .roundedRect)
         deleteButton.setTitle("Delete", for: UIControlState())

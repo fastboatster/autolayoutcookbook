@@ -51,7 +51,7 @@ class DynamicStackViewStoryboardController: UIViewController {
     }
     
     
-    func deleteStackView(_ sender: UIButton) {
+    @objc func deleteStackView(_ sender: UIButton) {
         if let view = sender.superview {
             UIView.animate(withDuration: 0.25, animations: { () -> Void in
                 view.isHidden = true
